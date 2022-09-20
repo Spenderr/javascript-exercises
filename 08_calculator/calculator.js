@@ -8,28 +8,52 @@ const subtract = function(num1,num2) {
     return result;
 };
 
-const sum = function(nums) {
-    var sums;
-    if(nums == '')
+const sum = function(nums){
+
+    var sums = 0;
+
+    for(var i = 0 ; i < nums.length ; i++)
+    {
+    sums += nums[i];
+    }
+    
+    if(nums.length == 0)
     {
     sums=0;
     }
-    for(var i = 0; i <= nums.length; i++)
+    
+    return sums;
+    
+};
+
+const multiply = function(nums) {
+
+    var sums = 1;
+    
+    for(var i = 0; i < nums.length; i++)
     {
-    sums += nums[i]
+    sums *= nums[i];
     }
     return sums;
 };
 
-const multiply = function() {
-
-};
-
-const power = function() {
+const power = function(num1,num2) {
 	
+    result = num1 ** num2;
+    return result;
+    
 };
 
-const factorial = function() {
+const factorial = function(num) {
+    var sums = 1;
+    
+    for(var i = num ; num > 0 ; i--)
+    {
+    sums *= num;
+    num -= 1;        
+    }
+    
+    return sums;
 	
 };
 
